@@ -8,35 +8,15 @@
     </header>
     <div class="special-goods-container">
       <ul class="special-goods-list">
-        <li class="special-goods-item">
+        <li class="special-goods-item" v-for="(item ,index) in topicList" :key="index">
           <div class="special-goods-img">
-            <img src="./images/22c06cba5722e5fd0e9561cf5b7b1800.jpg" alt="">
+            <img :src="item.itemPicUrl" alt="">
           </div>
           <div class="line1">
-            <h4 class="line1-title">给毛孔来一次深度清洁</h4>
-            <span class="line1-price">107.1元起</span>
+            <h4 class="line1-title">{{item.title}}</h4>
+            <span class="line1-price">{{item.priceInfo}}元起</span>
           </div>
-          <div class="desc">硅胶洁面仪，洗出会发光的素颜肌</div>
-        </li>
-        <li class="special-goods-item">
-          <div class="special-goods-img">
-            <img src="./images/22c06cba5722e5fd0e9561cf5b7b1800.jpg" alt="">
-          </div>
-          <div class="line1">
-            <h4 class="line1-title">给毛孔来一次深度清洁</h4>
-            <span class="line1-price">107.1元起</span>
-          </div>
-          <div class="desc">硅胶洁面仪，洗出会发光的素颜肌</div>
-        </li>
-        <li class="special-goods-item">
-          <div class="special-goods-img">
-            <img src="./images/22c06cba5722e5fd0e9561cf5b7b1800.jpg" alt="">
-          </div>
-          <div class="line1">
-            <h4 class="line1-title">给毛孔来一次深度清洁</h4>
-            <span class="line1-price">107.1元起</span>
-          </div>
-          <div class="desc">硅胶洁面仪，洗出会发光的素颜肌</div>
+          <div class="desc">{{item.subtitle}}</div>
         </li>
       </ul>
     </div>
@@ -44,8 +24,22 @@
 </template>
 
 <script>
+  import {mapState} from 'vuex'
+  import BScroll from 'better-scroll'
     export default {
-
+      computed:{
+        ...mapState(['topicList'])
+      },
+      mounted () {
+        this.$store.dispatch('getTopicList',()=>{
+          this.$nextTick(()=>{
+            new BScroll('.special-goods-container',{
+              click: true,
+              scrollX:true
+            })
+          })
+        })
+      }
     }
 </script>
 

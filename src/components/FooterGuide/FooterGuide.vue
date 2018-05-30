@@ -62,7 +62,7 @@
         margin-bottom (2/$rem)
         margin-top (7/$rem)
       .item_icon
-        display: inline-block
+        display inline-block
         vertical-align middle
         background-repeat no-repeat
         width (39.98/$rem)

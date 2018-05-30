@@ -9,3 +9,23 @@ export const reqTagList = () => ajax('/home_tagList')
 export const reqNewItemList = () => ajax('/home_newItemList')
 //人气推荐
 export const reqPopularItemList = () => ajax('/home_popularItemList')
+//专题精选
+export const reqTopicList = () => ajax('/home_topicList')
+//居家好物栏一下
+export const reqCateList = () => ajax('/home_cateList')
+//首页轮播
+export const reqFocusList = () => ajax('/home_focusList')
+//识物页面严选推荐
+export const reqColumn = () => ajax('/googs_column')
+//为你推荐
+export const reqRecommends = () => ajax('/googs_recommends')
+//十点一刻
+export const reqTenfifteen = () => ajax('/googs_tenfifteen')
+//甄品
+export const reqZhenPins = () => ajax('/googs_zhenPins')
+//严选look
+export const reqYxLook = () => ajax('/googs_yxLook')
+//更多精彩
+export const reqFindMore = () => ajax('/googs_findMore')
+//识物轮播
+export const reqBanner = () => ajax('/googs_banner')

@@ -44,37 +44,7 @@
           </li>
         </ul>
       </nav>
-    <nav class="swiper_nav">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/swiper1.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper2.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper3.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper4.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper5.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper7.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper6.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/swiper8.jpg" alt="">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </nav>
+    <SwiperList/>
     <div class="m-indexServicePolicy">
       <ul class="g-grow">
         <li class="item">
@@ -125,115 +95,8 @@
         <img src="./images/a3ea2d1108c94c7dece05eddf95f6df5.jpg" alt="" class="welfare-service-img">
       </a>
     </div>
-
-    <div class="good-recommend">
-      <h3>
-        居家好物
-      </h3>
-      <div class="good-recommend-container">
-        <ul class="good-recommend-list">
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-img">
-                <img src="./images/1059f517cd4a529fcc3f9299f5173bef.png" alt="">
-              </div>
-              <div class="desc">宽细夹排，升级爽滑凉感</div>
-            </div>
-            <div class="good-recommend-tagWraper">
-              <p>满额减</p>
-            </div>
-            <div class="good-recommend-name">平滑细篾头层青碳化竹凉席</div>
-            <div class="price">￥279</div>
-          </li>
-          <li class="good-recommend-item">
-            <div class="good-recommend-upper">
-              <div class="good-recommend-upper-last">
-                <p class="good-recommend-upper-search">更多居家好物</p>
-                <span class="good-recommend-icon"></span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <SpecialGoods/>
+    <GoodRecommend/>
     <div class="m-ftWrap">
       <div class="bd">
         <a class='bd-left' href="javascript:;">下载APP</a>
@@ -245,6 +108,10 @@
         <span>食品经营许可证：JY13301080111719</span>
       </p>
     </div>
+    <a href="javascript:;" class="m-wapNewUserEntrance">
+      <span class="gift"></span>
+      <span class="toTop" @click="goTop()"></span>
+    </a>
   </div>
 </template>
 <script>
@@ -254,33 +121,37 @@
     import Brand from '../../components/Brand/Brand'
     import NewItems from '../../components/NewItems/NewItems'
     import PopularItemList from '../../components/PopularItemList/PopularItemList'
+    import SpecialGoods from '../../components/SpecialGoods/SpecialGoods'
+    import GoodRecommend from '../../components/GoodRecommend/GoodRecommend'
+    import SwiperList from '../../components/SwiperList/SwiperList'
     export default {
       mounted() {
         new BScroll('.m-tabs',{
           click: true,
           scrollX:true
         });
-        new BScroll('.m-goodGrid-newItem',{
-          click: true,
-          scrollX:true
-        });
-
-        new BScroll('.special-goods-container',{
-          click: true,
-          scrollX:true
-        })
-        new Swiper('.swiper-container',{
-          loop: true,
-          pagination:{
-            el: '.swiper-pagination',
-            type:'bullets'
+        let toTop = document.querySelector('.wrap .m-wapNewUserEntrance .toTop')
+        window.onscroll = () => {
+          this.t = document.documentElement.scrollTop || document.body.scrollTop
+          if( this.t > 600){
+            toTop.style.opacity = 1
+          }else {
+            toTop.style.opacity = 0
           }
-        })
+        }
+      },
+      methods:{
+        goTop() {
+          this.t = 0
+        }
       },
       components:{
         Brand,
         NewItems,
-        PopularItemList
+        PopularItemList,
+        SpecialGoods,
+        GoodRecommend,
+        SwiperList
       }
     }
 </script>
@@ -376,42 +247,6 @@
             font-size (28/$rem)
             text-align center
             color #333
-    .swiper_nav
-      height (400/$rem)
-      width 100%
-      margin-top (90/$rem)
-      .swiper-container
-        width 100%
-        height 100%
-        margin-left 0
-        margin-right 0
-        position relative
-        overflow hidden
-        .swiper-wrapper
-          width 100%
-          height 100%
-          z-index 1
-          display flex
-          .swiper-slide
-            width 100%
-            height 100%
-            display flex
-            flex-shrink 0
-            img
-              width 100%
-              height 100%
-              display inline-block
-              background-color #f9f9f9
-        .swiper-pagination-bullets
-          .swiper-pagination-bullet
-            width (40/$rem)
-            height (4/$rem)
-            border-radius 0
-            background-color #fff
-            opacity 0.4
-          .swiper-pagination-bullet-active
-            background #fff
-            opacity 1
     .m-indexServicePolicy
       width 100%
       height (72/$rem)
@@ -438,7 +273,6 @@
             background-size 100% 100%
           .text
             font-size (24/$rem)
-
 
 
 
@@ -551,116 +385,6 @@
           height 100%
 
 
-
-    .good-recommend
-      width 100%
-      >h3
-        width 100%
-        height (120/$rem)
-        line-height (120/$rem)
-        text-align center
-        font-size (28/$rem)
-        color #333
-        background-color #fff
-
-      .good-recommend-container
-        width 100%
-        .good-recommend-list
-          position relative
-          overflow hidden
-          width 100%
-          background-color white
-          clearFix()
-          .good-recommend-item
-            width 50%
-            box-sizing border-box
-            &:nth-child(2n+1)
-              padding 0 (10/$rem) (30/$rem) (20/$rem)
-            &:nth-child(2n)
-              padding 0 (20/$rem) (30/$rem) (10/$rem)
-            float left
-            position relative
-            overflow hidden
-            background-color white
-            .good-recommend-upper
-              background-color #f4f4f4
-              width 100%
-              position relative
-              height (414/$rem)
-              .good-recommend-upper-last
-                padding (128/$rem) 0 (129/$rem) 0
-                .good-recommend-upper-search
-                  color #333
-                  font-size (32/$rem)
-                  margin-bottom (60/$rem)
-                .good-recommend-icon
-                  display inline-block
-                  width (66.98/$rem)
-                  height (66.98/$rem)
-                  background-image url('./images/goodGridMore-233aaf669a.png')
-                  background-size 100% 100%
-              .good-recommend-img
-                width 100%
-                >img
-                  width 100%
-                  height (345/$rem)
-              .desc
-                position absolute
-                top (345/$rem)
-                width 100%
-                box-sizing border-box
-                background #F1ECE2
-                border-radius 0 0 (4/$rem) (4$rem)
-                font-size (24/$rem)
-                color #9F8A60
-                letter-spacing 0
-                line-height (29/$rem)
-                padding (20/$rem) (10/$rem)
-                white-space nowrap
-                text-overflow ellipsis
-                overflow hidden
-                text-align left
-
-
-            .good-recommend-tagWraper
-              width 100%
-              padding-left (10/$rem)
-              margin (20/$rem) 0 0 (4/$rem)
-              height (30/$rem)
-              overflow hidden
-              box-sizing border-box
-              text-align left
-              display flex
-              >p
-                background-color #f48f18
-                margin-bottom (1/$rem)
-                height (30/$rem)
-                padding (5/$rem) (16/$rem)
-                line-height (20/$rem)
-                text-align center
-                color #fff
-                font-size (24/$rem)
-                border-radius (2/$rem)
-                display inline-block
-                vertical-align middle
-
-            .good-recommend-name
-              margin-top (10/$rem)
-              padding 0 (10/$rem)
-              line-height (48/$rem)
-              text-align left
-              font-size (28/$rem)
-              box-sizing border-box
-              text-overflow ellipsis
-              white-space nowrap
-              color #333
-              width 100%
-            .price
-              text-align left
-              color #b4282d
-              font-size (32/$rem)
-              line-height 1
-              padding (10/$rem)
     .m-ftWrap
       width 100%
       height (243.98/$rem)
@@ -695,5 +419,27 @@
         line-height (32/$rem)
         color #999
 
+
+    .m-wapNewUserEntrance
+      display block
+      position fixed
+      right 0
+      bottom (240/$rem)
+      z-index 500
+      width (111.984/$rem)
+      height (80/$rem)
+      .gift
+        background-image url('./images/wapNewUserEntry-d7cf1023e9.png')
+        background-size 100% 100%
+        width 100%
+        height 100%
+        display inline-block
+      .toTop
+        display inline-block
+        width (81.98/$rem)
+        height (81.98/$rem)
+        background-image url('./images/goToTop-7a19216f77.png')
+        background-size 100% 100%
+        opacity 0
 
 </style>

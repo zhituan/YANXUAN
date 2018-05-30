@@ -31,12 +31,20 @@
 
 <script>
   import {mapState} from 'vuex'
+  import BScroll from 'better-scroll'
     export default {
       computed:{
         ...mapState(['newItemList'])
       },
       mounted() {
-        this.$store.dispatch('getnewItemList')
+        this.$store.dispatch('getnewItemList',()=>{
+          this.$nextTick(() => {
+            new BScroll('.m-goodGrid-newItem',{
+              click: true,
+              scrollX:true
+            });
+          })
+        });
       }
     }
 </script>

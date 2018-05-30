@@ -1,4 +1,13 @@
 export const GET_TAGLIST = 'get_taglist'
 export const GET_NEWITEMLIST = 'get_newitemlist' //新品首发
 export const GET_POPULARITEMLIST = 'get_popularitemlist' //人气推荐
-
+export const GET_TOPICLIST = 'get_topiclist' //专题精选
+export const GET_CATELIST = 'get_catelist' //好物推荐
+export const GET_FOCUSLIST = 'get_focuslist' //好物推荐
+export const GET_COLUMN = 'get_column' //严选推荐
+export const GET_RECOMMENDS = 'get_recommends' //为你推荐
+export const GET_TENFIFTEEN = 'get_tenfifteen' //十点一刻
+export const GET_ZHENPINS = 'get_zhenpins' //甄品
+export const GET_YXLOOK = 'get_yxlook' //look
+export const GET_FINDMORE = 'get_findmore' //更多精彩
+export const GET_BANNER = 'get_banner' //识物轮播
