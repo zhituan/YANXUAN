@@ -11,7 +11,9 @@ import {
   GET_ZHENPINS,
   GET_YXLOOK,
   GET_FINDMORE,
-  GET_BANNER
+  GET_BANNER,
+  GET_NAVLIST,
+  GET_HOMENAV
 }from './mutation-types'
 
 export default {
@@ -60,5 +62,12 @@ export default {
   },
   [GET_BANNER](state ,{banner}) {
     state.banner = banner
+  },
+  //分类左侧列表
+  [GET_NAVLIST](state ,{navList}) {
+    state.navList = navList
+  },
+  [GET_HOMENAV] (state ,{homeNav}) {
+    state.homeNav = homeNav
   }
 }

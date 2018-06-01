@@ -1,4 +1,5 @@
 export default {
+  homeNav:[],
   tagList:[], //品牌直供
   newItemList:[] ,//新品首发
   popularItemList:[] ,//人气推荐
@@ -11,5 +12,7 @@ export default {
   zhenPins:[], //甄品
   yxLook:{},//严选look
   findMore:[] ,//更多精彩
-  banner:[] //识物轮播
+  banner:[], //识物轮播
+  navList:[], //分类左侧导航
+  subCateList:[] //分类右侧内容
 }

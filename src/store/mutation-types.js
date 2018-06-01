@@ -11,3 +11,5 @@ export const GET_ZHENPINS = 'get_zhenpins' //甄品
 export const GET_YXLOOK = 'get_yxlook' //look
 export const GET_FINDMORE = 'get_findmore' //更多精彩
 export const GET_BANNER = 'get_banner' //识物轮播
+export const GET_NAVLIST = 'get_navlist' //识物轮播
+export const GET_HOMENAV = 'get_homenav' //首页导航

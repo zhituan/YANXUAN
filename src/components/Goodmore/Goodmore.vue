@@ -3,7 +3,7 @@
     <header class="goodmore-header">更多精彩</header>
     <div class="goodmore-container" v-for="(item ,index) in findMore" :key="index">
       <div class="img-container">
-        <img :src="item.itemPicUrl" alt="">
+        <img v-lazy="item.itemPicUrl" alt="">
       </div>
       <div class="goodmore-desc">{{item.title}}</div>
     </div>

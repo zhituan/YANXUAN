@@ -9,7 +9,7 @@
           <li class="good-recommend-item" v-for="(cateItem , index) in cate.itemList">
             <div class="good-recommend-upper">
               <div class="good-recommend-img">
-                <img :src="cateItem.listPicUrl" alt="">
+                <img v-lazy="cateItem.listPicUrl" alt="">
               </div>
               <div class="desc">{{cateItem.simpleDesc}}</div>
             </div>
@@ -35,14 +35,14 @@
 
 <script>
   import {mapState} from 'vuex'
-    export default {
-      computed:{
-        ...mapState(['cateList'])
-      },
-      mounted() {
-        this.$store.dispatch('getCateList')
-      }
+  export default {
+    computed:{
+      ...mapState(['cateList'])
+    },
+    mounted () {
+      this.$store.dispatch('getCateList')
     }
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">

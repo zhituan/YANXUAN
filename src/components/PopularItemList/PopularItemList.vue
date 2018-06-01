@@ -9,7 +9,7 @@
         <li class="newItem" v-for="(item ,index) in popularItemList" :key="index">
           <a href="javascript:;" class="newLink">
             <div class="newImg">
-              <img class='newImg-img' :src="item.listPicUrl" alt="">
+              <img class='newImg-img' v-lazy="item.listPicUrl" alt="">
             </div>
             <div class="newTxt">
               <span class="newIcon"></span>

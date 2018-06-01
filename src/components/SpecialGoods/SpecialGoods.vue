@@ -10,7 +10,7 @@
       <ul class="special-goods-list">
         <li class="special-goods-item" v-for="(item ,index) in topicList" :key="index">
           <div class="special-goods-img">
-            <img :src="item.itemPicUrl" alt="">
+            <img v-lazy="item.itemPicUrl" alt="">
           </div>
           <div class="line1">
             <h4 class="line1-title">{{item.title}}</h4>

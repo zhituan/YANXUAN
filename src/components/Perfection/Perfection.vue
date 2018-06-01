@@ -5,7 +5,7 @@
       <a href="javascript:;" class="bigRcmds" >
         <div class="imgContainer">
           <span class="topicTag">{{zhenPins[0].typeName}}</span>
-          <img :src="zhenPins[0].picUrl" alt="">
+          <img v-lazy="zhenPins[0].picUrl" alt="">
         </div>
         <div class="RcmdsInfo">
           <div class="RcmdsInfo-upper">
@@ -28,7 +28,7 @@
         </div>
         <div class="rightItem">
           <p>{{zhenPins[1].typeName}}</p>
-          <img :src="zhenPins[1].picUrl" alt="" class="rightItemImg">
+          <img v-lazy="zhenPins[1].picUrl" alt="" class="rightItemImg">
         </div>
       </a>
       <a href="javascript:;" class="smallRcmds">
@@ -44,7 +44,7 @@
         </div>
         <div class="rightItem">
           <p>{{zhenPins[2].typeName}}</p>
-          <img :src="zhenPins[2].picUrl" alt="" class="rightItemImg">
+          <img v-lazy="zhenPins[2].picUrl" alt="" class="rightItemImg">
         </div>
       </a>
     </div>
@@ -174,8 +174,6 @@
               white-space nowrap
               overflow hidden
               font-size (24/$rem)
-
-
           .leftItem-title
             width 100%
             height (38/$rem)
@@ -211,4 +209,5 @@
             border-radius (20/$rem)
             color #333
             line-height (36/$rem)
+            text-align center
 </style>

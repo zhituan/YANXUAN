@@ -17,7 +17,7 @@
                 <span class="price2">元起</span>
               </div>
             </div>
-            <img :src="item.picUrl" alt="">
+            <img v-lazy="item.picUrl" alt="">
           </a>
         </li>
       </ul>

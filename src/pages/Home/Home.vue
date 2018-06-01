@@ -9,38 +9,9 @@
       </header>
     <nav class="m-tabs">
         <ul class="list">
-          <li class="tab active">
-            <span class="txt">推荐</span>
-          </li>
-          <li class="tab">
-            <span class="txt">居家</span>
-          </li>
-          <li class="tab">
-            <span class="txt">配件</span>
-          </li>
-          <li class="tab">
-            <span class="txt">服装</span>
-          </li>
-          <li class="tab">
-            <span class="txt">电器</span>
-          </li>
-          <li class="tab">
-            <span class="txt">洗护</span>
-          </li>
-          <li class="tab">
-            <span class="txt">饮食</span>
-          </li>
-          <li class="tab">
-            <span class="txt">餐厨</span>
-          </li>
-          <li class="tab">
-            <span class="txt">婴童</span>
-          </li>
-          <li class="tab">
-            <span class="txt">文体</span>
-          </li>
-          <li class="tab">
-            <span class="txt">特色区</span>
+          <li class="tab " :class="{active: currentIndex === index}" v-for="(item ,index) in homeNav"
+              :key="index" @click="changeColor(index)">
+            <span class="txt">{{item.name}}</span>
           </li>
         </ul>
       </nav>
@@ -118,6 +89,7 @@
     import BScroll from 'better-scroll'
     import Swiper from 'swiper'
     import 'swiper/dist/css/swiper.min.css'
+    import {mapState} from 'vuex'
     import Brand from '../../components/Brand/Brand'
     import NewItems from '../../components/NewItems/NewItems'
     import PopularItemList from '../../components/PopularItemList/PopularItemList'
@@ -125,11 +97,22 @@
     import GoodRecommend from '../../components/GoodRecommend/GoodRecommend'
     import SwiperList from '../../components/SwiperList/SwiperList'
     export default {
+      data(){
+        return {
+          currentIndex:0
+        }
+      },
+      name:'scroll-top',
+      props: {
+        toBottom: {
+          type: Number,
+          default: 0
+        }
+      },
+
+
       mounted() {
-        new BScroll('.m-tabs',{
-          click: true,
-          scrollX:true
-        });
+        this.$store.dispatch('getHomeNav')
         let toTop = document.querySelector('.wrap .m-wapNewUserEntrance .toTop')
         window.onscroll = () => {
           this.t = document.documentElement.scrollTop || document.body.scrollTop
@@ -138,11 +121,29 @@
           }else {
             toTop.style.opacity = 0
           }
+        };
+        //document.querySelector('.toTop').style.bottom = this.toBottom;
+      },
+      computed:{
+        ...mapState(['homeNav'])
+      },
+      watch:{
+        homeNav(value){
+          this.$nextTick(()=>{
+            new BScroll('.m-tabs',{
+              click: true,
+              scrollX:true,
+              eventPassthrough:'vertical'
+            });
+          })
         }
       },
       methods:{
         goTop() {
-          this.t = 0
+          document.documentElement.scrollTop = document.body.scrollTop = 0;
+        },
+        changeColor (index) {
+          this.currentIndex = index
         }
       },
       components:{

@@ -4,7 +4,7 @@
       <li class="recommend-item" v-for="(item ,index) in column" :key="index">
         <div class="img-content">
           <p>{{item.articleCount}}</p>
-          <img :src="item.picUrl" alt="">
+          <img v-lazy="item.picUrl" alt="">
         </div>
         <div class="recommend-item-title">{{item.title}}</div>
       </li>

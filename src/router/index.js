@@ -7,6 +7,9 @@ import  Classify from '../pages/Classify/Classify'
 import  ShopCart from '../pages/ShopCart/ShopCart'
 import  Profile from '../pages/Profile/Profile'
 import Search from '../components/Search/Search'
+import Login from '../pages/Login/Login'
+import PasswordLogin from '../components/loginType/PasswordLogin/PasswordLogin'
+import PhoneLogin from '../components/loginType/PhoneLogin/PhoneLogin'
 Vue.use(VueRouter)
 export default new VueRouter({
   routes:[
@@ -49,6 +52,24 @@ export default new VueRouter({
     {
       path:'/search',
       component:Search
+    },
+    {
+      path:'/login',
+      component:Login,
+      children:[
+        {
+          path:'/login/passwordLogin',
+          component:PasswordLogin
+        },
+        {
+          path:'/login/phoneLogin',
+          component:PhoneLogin
+        }
+      ]
+    },
+    {
+      path:'/login',
+      redirect:'/login/passwordLogin'
     }
   ]
 })

@@ -5,6 +5,7 @@
 import ajax from './ajax'
 // const BASE_URL = 'http://localhost:4000'
 export const reqTagList = () => ajax('/home_tagList')
+export const reqhoneNav = () => ajax('/home_tagList')
 //新品首发
 export const reqNewItemList = () => ajax('/home_newItemList')
 //人气推荐
@@ -29,3 +30,9 @@ export const reqYxLook = () => ajax('/googs_yxLook')
 export const reqFindMore = () => ajax('/googs_findMore')
 //识物轮播
 export const reqBanner = () => ajax('/googs_banner')
+//分类左侧列表
+export const reqNavList = () => ajax('/classify_navList')
+//分类右侧内容
+export const reqSubCateList = () => ajax('/classify_subCateList')
+//首页导航
+export const reqHomeNav = () => ajax('/home_homeNav')

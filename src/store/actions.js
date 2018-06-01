@@ -11,7 +11,9 @@ import {
   reqZhenPins,
   reqYxLook,
   reqFindMore,
-  reqBanner
+  reqBanner,
+  reqNavList,
+  reqHomeNav
 } from '../api/index'
 
 import {
@@ -27,7 +29,9 @@ import {
   GET_ZHENPINS,
   GET_YXLOOK,
   GET_FINDMORE,
-  GET_BANNER
+  GET_BANNER,
+  GET_NAVLIST,
+  GET_HOMENAV
 } from './mutation-types'
 export default {
   //获取品牌直供数据
@@ -38,7 +42,6 @@ export default {
       commit(GET_TAGLIST,{tagList})
     }
   },
-
 //  获取新品首发数据
   async getnewItemList ({commit} , callback){
     const result = await reqNewItemList()
@@ -137,6 +140,24 @@ export default {
     if(result.code === 0){
       const banner = result.data
       commit(GET_BANNER,{banner})
+      callback && callback()
+    }
+  },
+  // 分类左侧列表
+  async getNavList({commit} ,callback){
+    const result = await reqNavList()
+    if(result.code === 0){
+      const navList = result.data
+      commit(GET_NAVLIST,{navList})
+      callback && callback()
+    }
+  },
+
+  async getHomeNav({commit} ,callback){
+    const result = await reqHomeNav()
+    if(result.code === 0){
+      const homeNav = result.data
+      commit(GET_HOMENAV,{homeNav})
       callback && callback()
     }
   }

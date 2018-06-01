@@ -3,7 +3,7 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="(item ,index) in focusList" :key="index">
-          <img :src="item.picUrl" alt="">
+          <img v-lazy="item.picUrl" alt="">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -44,7 +44,7 @@
   .swiper_nav
     height (400/$rem)
     width 100%
-    margin-top (90/$rem)
+    margin-top (150/$rem)
     .swiper-container
       width 100%
       height 100%

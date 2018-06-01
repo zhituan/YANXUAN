@@ -44,7 +44,6 @@
       </div>
     </div>
     <Goodmore/>
-
   </div>
 </template>
 
@@ -68,7 +67,10 @@
         this.$nextTick(() => {
           new Swiper('.swiper-container', {
             loop: true,
-            autoplay:true
+            autoplay:true,
+            spaceBetween: 8,
+            slidesPerView : 1.1,
+            centeredSlides : true
           });
         })
       })
@@ -136,7 +138,7 @@
     .googs-swiper
       width 100%
       height (432.98/$rem)
-      margin-top (28/$rem)
+      margin-top (87/$rem)
       background-color white
       overflow hidden
       box-sizing border-box
