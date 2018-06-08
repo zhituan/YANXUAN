@@ -74,87 +74,89 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import '../../../common/stylus/mixins.styl'
   $rem = 750/10rem
-  .loginInfo
-    width 100%
-    box-sizing border-box
-    padding 0 (42/$rem)
-    margin-top (20/$rem)
-    .fromContainer
+  .wrap
+    height (939/$rem)
+    .loginInfo
       width 100%
-      height 100%
-      >form
+      box-sizing border-box
+      padding 0 (42/$rem)
+      margin-top (20/$rem)
+      .fromContainer
         width 100%
         height 100%
-        .upper,.down
-          width (666/$rem)
-          height (92/$rem)
-          display flex
-          align-items center
-          border-bottom 1px solid #e2e2e2
-          >span
-            display block
-            width (34/$rem)
-            height (42/$rem)
-            background-image url('./images/ico3.png')
-            background-repeat no-repeat
-            background-size 100%
-            margin-right (20/$rem)
-            &.pwdicon
-              background-image url('./images/ico4.png')
-          input[type='text'],input[type='password']
-            width (606/$rem)
-            height (42/$rem)
-            font-size (30/$rem)
-            display block
-            color #e2e2e2
-            caret-color #333
-            outline none
-  .button
-    width (615/$rem)
-    height (76/$rem)
-    margin-left (30/$rem)
-    margin-right (30/$rem)
-    background-color #b4282d
-    font-size (30/$rem)
-    color #fff
-    line-height (76/$rem)
-    text-align center
-    border-radius (10/$rem)
-    letter-spacing (10/$rem)
-  .register
-    height (88/$rem)
-    width 100%
-    box-sizing border-box
-    padding (24/$rem) (48/$rem)
-    display flex
-    justify-content space-between
-    >span
-      color #898989
-      font-size (28/$rem)
-  .joinNet
-    width 100%
-    height (228/$rem)
-    margin-top (200/$rem)
-    >p
-      width 100%
-      height (40/$rem)
+        >form
+          width 100%
+          height 100%
+          .upper,.down
+            width (666/$rem)
+            height (92/$rem)
+            display flex
+            align-items center
+            border-bottom 1px solid #e2e2e2
+            >span
+              display block
+              width (34/$rem)
+              height (42/$rem)
+              background-image url('./images/ico3.png')
+              background-repeat no-repeat
+              background-size 100%
+              margin-right (20/$rem)
+              &.pwdicon
+                background-image url('./images/ico4.png')
+            input[type='text'],input[type='password']
+              width (606/$rem)
+              height (42/$rem)
+              font-size (30/$rem)
+              display block
+              color #e2e2e2
+              caret-color #333
+              outline none
+    .button
+      width (615/$rem)
+      height (76/$rem)
+      margin-left (30/$rem)
+      margin-right (30/$rem)
+      background-color #b4282d
       font-size (30/$rem)
-      color #d7d7d7
+      color #fff
+      line-height (76/$rem)
       text-align center
-      line-height (40/$rem)
-    .joinNetImg
+      border-radius (10/$rem)
+      letter-spacing (10/$rem)
+    .register
+      height (88/$rem)
       width 100%
-      height (188/$rem)
-      padding (80/$rem)
       box-sizing border-box
+      padding (24/$rem) (48/$rem)
       display flex
       justify-content space-between
-    .imgContainer
-      width (116/$rem)
-      height (116/$rem)
-      border-radius 50%
-      overflow hidden
-      >img
+      >span
+        color #898989
+        font-size (28/$rem)
+    .joinNet
+      width 100%
+      height (228/$rem)
+      margin-top (200/$rem)
+      >p
         width 100%
-        height 100%
+        height (40/$rem)
+        font-size (30/$rem)
+        color #d7d7d7
+        text-align center
+        line-height (40/$rem)
+      .joinNetImg
+        width 100%
+        height (188/$rem)
+        padding (80/$rem)
+        box-sizing border-box
+        display flex
+        justify-content space-between
+      .imgContainer
+        width (116/$rem)
+        height (116/$rem)
+        border-radius 50%
+        overflow hidden
+        >img
+          width 100%
+          height 100%
 </style>

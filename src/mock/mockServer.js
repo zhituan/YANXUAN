@@ -7,10 +7,10 @@ import seconedData from './seconedData'
 import datanav from './datanav'
 import homeData1 from './homeData1'
 
-Mock.mock('/home_tagList',{code:0, data:data.tagList})
-Mock.mock('/home_newItemList',{code:0, data:data.newItemList})
-Mock.mock('/home_popularItemList',{code:0, data:data.popularItemList})
-Mock.mock('/home_topicList',{code:0,data:data.topicList})
+Mock.mock('/home_tagList', {code : 0 , data : data.tagList})
+Mock.mock('/home_newItemList', {code : 0 , data : data.newItemList})
+Mock.mock('/home_popularItemList',{code : 0 , data : data.popularItemList})
+Mock.mock('/home_topicList', {code:0 , data : data.topicList})
 Mock.mock('/home_cateList',{code:0,data:data.cateList})
 Mock.mock('/home_focusList',{code:0,data:data.focusList})
 Mock.mock('/googs_column',{code:0,data:seconedData.column})

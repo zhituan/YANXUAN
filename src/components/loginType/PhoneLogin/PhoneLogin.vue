@@ -100,99 +100,101 @@
 <style lang="stylus" rel="stylesheet/stylus">
   @import '../../../common/stylus/mixins.styl'
   $rem = 750/10rem
-  .mformBox
-    width 100%
-    box-sizing border-box
-    padding 0 (42/$rem)
-    margin-top (20/$rem)
-    form
-      .inputContainer
-        width 100%
-        height (92/$rem)
-        display flex
-        border-bottom 1px solid #e2e2e2
-        align-items center
-        .phoneIcon
-          width (34/$rem)
-          height (40/$rem)
-          display block
-          background-image url('./images/ico1.png')
-          background-size 100%
-          background-repeat no-repeat
-          margin-right (20/$rem)
-        .InfoIcon,.pwdIcon
-          width (34/$rem)
-          height (40/$rem)
-          display block
-          background-image url('./images/ico4.png')
-          background-size 100%
-          background-repeat no-repeat
-          margin-right (20/$rem)
-      input
-        width (606/$rem)
-        height (42/$rem)
-        font-size (30/$rem)
-        display block
-        color #e2e2e2
-        outline none
-        caret-color #333
-        &.right_phone
-          color black
-      .imgPwd
-        display block
-        width (170/$rem)
-        height (60/$rem)
-      .btnPwd
-        width (300/$rem)
-        height (60/$rem)
-        font-size (24/$rem)
-      .button
-        width (615/$rem)
-        height (76/$rem)
-        margin-left (30/$rem)
-        margin-right (30/$rem)
-        background-color #b4282d
-        font-size (30/$rem)
-        color #fff
-        line-height (76/$rem)
-        text-align center
-        border-radius (10/$rem)
-        letter-spacing (10/$rem)
-        margin-top (30/$rem)
-  .register
-    height (88/$rem)
-    width 100%
-    box-sizing border-box
-    padding (24/$rem) (48/$rem)
-    display flex
-    justify-content space-between
-    >span
-      color #898989
-      font-size (28/$rem)
-  .joinNet
-    width 100%
-    height (228/$rem)
-    margin-top (150/$rem)
-    >p
+  .wrap
+    height (939/$rem)
+    .mformBox
       width 100%
-      height (40/$rem)
-      font-size (30/$rem)
-      color #d7d7d7
-      text-align center
-      line-height (40/$rem)
-    .joinNetImg
-      width 100%
-      height (188/$rem)
-      padding (80/$rem)
       box-sizing border-box
+      padding 0 (42/$rem)
+      margin-top (20/$rem)
+      form
+        .inputContainer
+          width 100%
+          height (92/$rem)
+          display flex
+          border-bottom 1px solid #e2e2e2
+          align-items center
+          .phoneIcon
+            width (34/$rem)
+            height (40/$rem)
+            display block
+            background-image url('./images/ico1.png')
+            background-size 100%
+            background-repeat no-repeat
+            margin-right (20/$rem)
+          .InfoIcon,.pwdIcon
+            width (34/$rem)
+            height (40/$rem)
+            display block
+            background-image url('./images/ico4.png')
+            background-size 100%
+            background-repeat no-repeat
+            margin-right (20/$rem)
+        input
+          width (606/$rem)
+          height (42/$rem)
+          font-size (30/$rem)
+          display block
+          color #e2e2e2
+          outline none
+          caret-color #333
+          &.right_phone
+            color black
+        .imgPwd
+          display block
+          width (170/$rem)
+          height (60/$rem)
+        .btnPwd
+          width (300/$rem)
+          height (60/$rem)
+          font-size (24/$rem)
+        .button
+          width (615/$rem)
+          height (76/$rem)
+          margin-left (30/$rem)
+          margin-right (30/$rem)
+          background-color #b4282d
+          font-size (30/$rem)
+          color #fff
+          line-height (76/$rem)
+          text-align center
+          border-radius (10/$rem)
+          letter-spacing (10/$rem)
+          margin-top (30/$rem)
+    .register
+      height (88/$rem)
+      width 100%
+      box-sizing border-box
+      padding (24/$rem) (48/$rem)
       display flex
       justify-content space-between
-    .imgContainer
-      width (116/$rem)
-      height (116/$rem)
-      border-radius 50%
-      overflow hidden
-      >img
+      >span
+        color #898989
+        font-size (28/$rem)
+    .joinNet
+      width 100%
+      height (228/$rem)
+      margin-top (150/$rem)
+      >p
         width 100%
-        height 100%
+        height (40/$rem)
+        font-size (30/$rem)
+        color #d7d7d7
+        text-align center
+        line-height (40/$rem)
+      .joinNetImg
+        width 100%
+        height (188/$rem)
+        padding (80/$rem)
+        box-sizing border-box
+        display flex
+        justify-content space-between
+      .imgContainer
+        width (116/$rem)
+        height (116/$rem)
+        border-radius 50%
+        overflow hidden
+        >img
+          width 100%
+          height 100%
 </style>

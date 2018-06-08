@@ -34,7 +34,7 @@ import {
   GET_HOMENAV
 } from './mutation-types'
 export default {
-  //获取品牌直供数据
+  // 获取品牌直供数据
   async getTagList ({commit}){
     const result = await reqTagList()
     if(result.code === 0){
@@ -42,7 +42,7 @@ export default {
       commit(GET_TAGLIST,{tagList})
     }
   },
-//  获取新品首发数据
+// 获取新品首发数据
   async getnewItemList ({commit} , callback){
     const result = await reqNewItemList()
     if(result.code === 0){
@@ -51,7 +51,7 @@ export default {
       callback && callback()
     }
   },
-//  人气推荐
+// 人气推荐
   async getPopularItemList ({commit}){
     const result = await reqPopularItemList()
     if(result.code === 0){
@@ -59,7 +59,7 @@ export default {
       commit(GET_POPULARITEMLIST,{popularItemList})
     }
   },
-  //专题精选
+  // 专题精选
   async getTopicList ({commit},callback){
     const result = await reqTopicList()
     if(result.code === 0){
@@ -68,7 +68,7 @@ export default {
       callback && callback()
     }
   },
-  //好物推荐
+  // 好物推荐
   async getCateList ({commit}){
     const result = await reqCateList()
     if(result.code === 0){
@@ -83,7 +83,7 @@ export default {
       commit(GET_FOCUSLIST,{focusList})
     }
   },
-  //识物页面严选推荐
+  // 识物页面严选推荐
   async getColumn ({commit} ,callback){
   const result = await reqColumn()
   if(result.code === 0){
@@ -92,7 +92,7 @@ export default {
     callback && callback()
   }
 },
-  //为你推荐
+  // 为你推荐
   async getRecommends ({commit} ,callback){
     const result = await reqRecommends()
     if(result.code === 0){
@@ -101,7 +101,7 @@ export default {
       callback && callback()
     }
   },
-  //十点一刻
+  // 十点一刻
   async getTenfifteen ({commit} ,callback){
     const result = await reqTenfifteen()
     if(result.code === 0){
@@ -118,7 +118,7 @@ export default {
       callback && callback()
     }
   },
-  //look
+  // look
   async getYxLook({commit} ,callback){
     const result = await reqYxLook()
     if(result.code === 0){

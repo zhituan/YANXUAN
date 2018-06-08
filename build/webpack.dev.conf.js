@@ -55,7 +55,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      inject: true
+      inject: true,
+      favicon:'./static/images/yanxuan.jpg'
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
@@ -65,7 +66,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ])
-  ]
+  ],
 })
 
 module.exports = new Promise((resolve, reject) => {
@@ -93,3 +94,4 @@ module.exports = new Promise((resolve, reject) => {
     }
   })
 })
+

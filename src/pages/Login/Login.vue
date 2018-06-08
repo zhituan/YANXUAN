@@ -33,9 +33,6 @@
           show:false
         }
       },
-      props: {
-        data: Boolean
-      },
       beforeMount () {
          PubSub.subscribe('show', (show ,{toShow}) => {
            this.show = toShow

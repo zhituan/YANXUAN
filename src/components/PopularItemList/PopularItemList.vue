@@ -139,6 +139,7 @@
             display block
             width 100%
             border (8/$rem) solid #F4F4F4
+            text-align center
             .searchMore
               color #666
               font-size (28/$rem)

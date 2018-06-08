@@ -1,11 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import  Home from '../pages/Home/Home'
+/*import  Home from '../pages/Home/Home'
 import  GoodGoogs from '../pages/GoodGoogs/GoodGoogs'
 import  Classify from '../pages/Classify/Classify'
 import  ShopCart from '../pages/ShopCart/ShopCart'
-import  Profile from '../pages/Profile/Profile'
+import  Profile from '../pages/Profile/Profile'*/
+const Home = () =>import('../pages/Home/Home')
+const GoodGoogs = () => import('../pages/GoodGoogs/GoodGoogs')
+const Classify = () => import('../pages/Classify/Classify')
+const ShopCart = () => import('../pages/ShopCart/ShopCart')
+const Profile = () => import('../pages/Profile/Profile')
 import Search from '../components/Search/Search'
 import Login from '../pages/Login/Login'
 import PasswordLogin from '../components/loginType/PasswordLogin/PasswordLogin'
@@ -14,62 +19,62 @@ Vue.use(VueRouter)
 export default new VueRouter({
   routes:[
     {
-      path: '/',
-      redirect: '/home'
+      path : '/',
+      redirect : '/home'
     },
     {
-      path: '/home',
-      component: Home,
+      path : '/home',
+      component : Home,
       meta: {
-        showFooter: true
+        showFooter : true
       }
     },
     {
-      path: '/goodgoogs',
-      component: GoodGoogs,
+      path : '/goodgoogs',
+      component : GoodGoogs,
       meta: {
-        showFooter: true
+        showFooter : true
       }
     },
     {
-      path:'/classify',
-      component:Classify,
+      path :'/classify',
+      component :Classify,
       meta: {
-        showFooter: true
+        showFooter : true
       }
     },
     {
-      path:'/shopcart',
-      component:ShopCart,
+      path :'/shopcart',
+      component : ShopCart,
       meta: {
-        showFooter: true
+        showFooter : true
       }
     },
     {
-      path:'/profile',
-      component:Profile
+      path :'/profile',
+      component : Profile
     },
     {
-      path:'/search',
-      component:Search
+      path :'/search',
+      component : Search
     },
     {
-      path:'/login',
-      component:Login,
-      children:[
+      path : '/login',
+      component : Login,
+      children : [
         {
-          path:'/login/passwordLogin',
-          component:PasswordLogin
+          path : '/login/passwordLogin',
+          component : PasswordLogin
         },
         {
-          path:'/login/phoneLogin',
-          component:PhoneLogin
+          path : '/login/phoneLogin',
+          component : PhoneLogin
         }
       ]
     },
     {
-      path:'/login',
-      redirect:'/login/passwordLogin'
+      path : '/login',
+      redirect : '/login/passwordLogin'
     }
   ]
 })

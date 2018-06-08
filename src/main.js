@@ -8,7 +8,7 @@ import './mock/mockServer'
 import loading from './common/img/timg.gif'
 
 /* eslint-disable no-new */
-Vue.use (VueLazyload ,{
+Vue.use (VueLazyload , {
   loading
 })
 new Vue({
